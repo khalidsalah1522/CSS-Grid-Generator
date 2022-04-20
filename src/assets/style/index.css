@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Gemunu";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/GemunuLibre-SemiBold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "NATS";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/NATS-Regular.woff") format("woff");
+}
