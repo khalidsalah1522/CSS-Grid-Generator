@@ -1,12 +1,12 @@
 import React, { useContext } from "react";
 import { rowsContext, colContext } from "../Context/Context";
 
-function Generator() {
+function Generator({ setShowResult }) {
   const { colsMount, setColsMount } = useContext(colContext);
   const { rowsMount, setRowsMount } = useContext(rowsContext);
 
   return (
-    <section className="generator h-[90%] w-[18%]">
+    <section className="generator flex flex-col items-center h-[90%] w-[18%]">
       <h4 className="text-center font-Gemunu text-[2.4rem] tracking-widest text-[#ff7979] mt-[-1rem]">
         Control
       </h4>
@@ -28,7 +28,7 @@ function Generator() {
                 kind:
                   colsMount.kind && +e.target.value > colsMount.kind.length - 1
                     ? [...colsMount.kind, "1fr"]
-                    : Array(+e.target.value).fill("1fr"),
+                    : [...colsMount.kind.splice(0, colsMount.kind.length - 1)],
               })
             }
           />
@@ -64,7 +64,7 @@ function Generator() {
                 kind:
                   rowsMount.kind && +e.target.value > rowsMount.kind.length - 1
                     ? [...rowsMount.kind, "1fr"]
-                    : Array(+e.target.value).fill("1fr"),
+                    : [...rowsMount.kind.splice(0, rowsMount.kind.length - 1)],
               })
             }
           />
@@ -85,6 +85,13 @@ function Generator() {
           />
         </div>
       </div>
+      <button
+        type="button"
+        onClick={() => setShowResult(true)}
+        className="mt-[2rem] font-NATS font-semibold px-[0.4rem] py-[0.3rem] text-[1.1rem] tracking-wider rounded bg-[#fff] text-[#f36a6a]"
+      >
+        Show Result
+      </button>
     </section>
   );
 }

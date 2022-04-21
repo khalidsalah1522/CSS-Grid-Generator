@@ -14,7 +14,12 @@ function GridGenerator() {
 
   const handleDown = (e) => {
     if (!isDown) {
-      down = [e.target.dataset.col, e.target.dataset.row];
+      down = [
+        +e.target.dataset.col === 0
+          ? `${colsMount.kind.length}`
+          : e.target.dataset.col,
+        e.target.dataset.row,
+      ];
     }
     isDown = true;
   };
@@ -24,7 +29,12 @@ function GridGenerator() {
       ...newDiv,
       {
         down,
-        up: [e.target.dataset.col, e.target.dataset.row],
+        up: [
+          +e.target.dataset.col === 0
+            ? `${colsMount.kind.length}`
+            : e.target.dataset.col,
+          e.target.dataset.row,
+        ],
       },
     ]);
     isDown = false;
@@ -32,7 +42,7 @@ function GridGenerator() {
 
   return (
     <div
-      className="grid-generator grid h-full text-white bg-[#3f3f3f] border-[2px] border-[#ededed]"
+      className="grid-generator z-10 absolute top-0 left-0 grid h-full w-full text-white bg-[#3f3f3f2b] border-[2px] border-[#ededed]"
       style={{
         gridTemplateColumns: `${column.join(" ")}`,
         gridTemplateRows: `${row.join(" ")}`,

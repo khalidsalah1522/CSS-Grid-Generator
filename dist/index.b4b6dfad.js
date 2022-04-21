@@ -25136,6 +25136,8 @@ var _generator = require("./components/Generator");
 var _generatorDefault = parcelHelpers.interopDefault(_generator);
 var _grid = require("./components/Grid");
 var _gridDefault = parcelHelpers.interopDefault(_grid);
+var _showResult = require("./components/ShowResult");
+var _showResultDefault = parcelHelpers.interopDefault(_showResult);
 var _context = require("./Context/Context");
 var _s = $RefreshSig$();
 function App() {
@@ -25161,6 +25163,7 @@ function App() {
         gap: 0
     });
     const [newDiv, setNewDev] = _react.useState([]);
+    const [showResult, setShowResult] = _react.useState(false);
     const checkCol = _react.useMemo(()=>({
             colsMount,
             setColsMount
@@ -25182,21 +25185,16 @@ function App() {
     , [
         newDiv
     ]);
-    _react.useEffect(()=>{
-        console.log(newDiv);
-    }, [
-        newDiv
-    ]);
     return /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
-        className: "app-container bg-[#222] overflow-hidden h-screen flex flex-col items-center justify-between",
+        className: "app-container relative bg-[#222] overflow-hidden h-screen flex flex-col items-center justify-between",
         children: [
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_headerDefault.default, {}, void 0, false, {
                 fileName: "src/App.jsx",
-                lineNumber: 29,
+                lineNumber: 27,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
-                className: "main-container h-[650px] w-[80%] text-[white] flex items-center justify-between",
+                className: "main-container hidden lg:flex h-[650px] w-[80%] text-[white] items-center justify-between",
                 children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_context.colContext.Provider, {
                     value: checkCol,
                     children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_context.rowsContext.Provider, {
@@ -25206,43 +25204,60 @@ function App() {
                             children: [
                                 /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_gridDefault.default, {}, void 0, false, {
                                     fileName: "src/App.jsx",
-                                    lineNumber: 34,
+                                    lineNumber: 32,
                                     columnNumber: 15
                                 }, this),
-                                /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_generatorDefault.default, {}, void 0, false, {
+                                /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_generatorDefault.default, {
+                                    setShowResult: setShowResult
+                                }, void 0, false, {
                                     fileName: "src/App.jsx",
-                                    lineNumber: 35,
+                                    lineNumber: 33,
                                     columnNumber: 15
-                                }, this)
+                                }, this),
+                                showResult ? /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_showResultDefault.default, {
+                                    setShowResult: setShowResult
+                                }, void 0, false, {
+                                    fileName: "src/App.jsx",
+                                    lineNumber: 34,
+                                    columnNumber: 29
+                                }, this) : ""
                             ]
                         }, void 0, true, {
                             fileName: "src/App.jsx",
-                            lineNumber: 33,
+                            lineNumber: 31,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "src/App.jsx",
-                        lineNumber: 32,
+                        lineNumber: 30,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "src/App.jsx",
-                    lineNumber: 31,
+                    lineNumber: 29,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "src/App.jsx",
-                lineNumber: 30,
+                lineNumber: 28,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
+                className: "not text-[2rem] uppercase absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] text-[#f0ecec] font-NATS tracking-wide text-center lg:hidden",
+                children: "Visit on a laptop or desktop"
+            }, void 0, false, {
+                fileName: "src/App.jsx",
+                lineNumber: 39,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "src/App.jsx",
-        lineNumber: 28,
+        lineNumber: 26,
         columnNumber: 5
     }, this);
 }
-_s(App, "b2znLEjTcKEDDTl259p+4PO+rDU=");
+_s(App, "Ik4hM68tvZZpVy3KtQVJVkvEZ/U=");
 _c = App;
 exports.default = App;
 var _c;
@@ -25253,7 +25268,7 @@ $RefreshReg$(_c, "App");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./components/Header":"knC38","./components/Grid":"axNUW","./components/Generator":"hOUiR","./Context/Context":"69YKq"}],"knC38":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./components/Header":"knC38","./components/Grid":"axNUW","./components/Generator":"hOUiR","./Context/Context":"69YKq","./components/ShowResult":"ezKsy"}],"knC38":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$e807 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -25344,6 +25359,8 @@ var _values = require("./Values");
 var _valuesDefault = parcelHelpers.interopDefault(_values);
 var _gridGenerator = require("./GridGenerator");
 var _gridGeneratorDefault = parcelHelpers.interopDefault(_gridGenerator);
+var _newDivs = require("./NewDivs");
+var _newDivsDefault = parcelHelpers.interopDefault(_newDivs);
 var _context = require("../Context/Context");
 var _s = $RefreshSig$();
 function Grid() {
@@ -25357,31 +25374,36 @@ function Grid() {
                 typeStr: "column",
                 type: colsMount,
                 setType: setColsMount,
-                cssStyle: "absolute top-[-6%] z-1 w-full grid"
+                cssStyle: "absolute lg:top-[-8%] xl:top-[-7%] 2xl:top-[-6%] z-1 w-full grid"
             }, void 0, false, {
                 fileName: "src/components/Grid.jsx",
-                lineNumber: 13,
+                lineNumber: 14,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_newDivsDefault.default, {}, void 0, false, {
+                fileName: "src/components/Grid.jsx",
+                lineNumber: 20,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_gridGeneratorDefault.default, {}, void 0, false, {
                 fileName: "src/components/Grid.jsx",
-                lineNumber: 19,
+                lineNumber: 21,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_valuesDefault.default, {
                 typeStr: "row",
                 type: rowsMount,
                 setType: setRowsMount,
-                cssStyle: "absolute top-0 left-[-7%] z-1 h-full w-[5rem] grid"
+                cssStyle: "absolute lg:left-[-15%] xl:left-[-12%] top-0 2xl:left-[-7%] z-1 h-full w-[5rem] grid"
             }, void 0, false, {
                 fileName: "src/components/Grid.jsx",
-                lineNumber: 20,
+                lineNumber: 22,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "src/components/Grid.jsx",
-        lineNumber: 12,
+        lineNumber: 13,
         columnNumber: 5
     }, this);
 }
@@ -25396,7 +25418,7 @@ $RefreshReg$(_c, "Grid");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../assets/style/grid.css":"9ine8","./GridGenerator":"iwhbb","./Values":"843le","../Context/Context":"69YKq"}],"9ine8":[function() {},{}],"iwhbb":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./GridGenerator":"iwhbb","./Values":"843le","../Context/Context":"69YKq","./NewDivs":"fWTtJ","../assets/style/grid.css":"9ine8"}],"iwhbb":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$b00a = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -25422,8 +25444,8 @@ function GridGenerator() {
     let down = [];
     const handleDown = (e)=>{
         if (!isDown) down = [
-            e.target.dataset.col,
-            e.target.dataset.row
+            +e.target.dataset.col === 0 ? `${colsMount.kind.length}` : e.target.dataset.col,
+            e.target.dataset.row, 
         ];
         isDown = true;
     };
@@ -25433,15 +25455,15 @@ function GridGenerator() {
             {
                 down,
                 up: [
-                    e.target.dataset.col,
-                    e.target.dataset.row
+                    +e.target.dataset.col === 0 ? `${colsMount.kind.length}` : e.target.dataset.col,
+                    e.target.dataset.row, 
                 ]
             }, 
         ]);
         isDown = false;
     };
     return /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
-        className: "grid-generator grid h-full text-white bg-[#3f3f3f] border-[2px] border-[#ededed]",
+        className: "grid-generator z-10 absolute top-0 left-0 grid h-full w-full text-white bg-[#3f3f3f2b] border-[2px] border-[#ededed]",
         style: {
             gridTemplateColumns: `${column.join(" ")}`,
             gridTemplateRows: `${row.join(" ")}`,
@@ -25458,13 +25480,13 @@ function GridGenerator() {
                 role: "button"
             }, new Date() * Math.random(), false, {
                 fileName: "src/components/GridGenerator.jsx",
-                lineNumber: 44,
+                lineNumber: 54,
                 columnNumber: 9
             }, this)
         )
     }, void 0, false, {
         fileName: "src/components/GridGenerator.jsx",
-        lineNumber: 34,
+        lineNumber: 44,
         columnNumber: 5
     }, this);
 }
@@ -25622,7 +25644,94 @@ $RefreshReg$(_c, "InputValue");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"hOUiR":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"fWTtJ":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$b640 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$b640.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _context = require("../Context/Context");
+var _s = $RefreshSig$();
+function NewDivs() {
+    _s();
+    const { rowsMount  } = _react.useContext(_context.rowsContext);
+    const { colsMount  } = _react.useContext(_context.colContext);
+    const { newDiv , setNewDev  } = _react.useContext(_context.divContext);
+    const column = colsMount.kind;
+    const row = rowsMount.kind;
+    const handleDiv = (obj)=>{
+        setNewDev([
+            ...newDiv.filter((div)=>div !== obj
+            )
+        ]);
+    };
+    return /*#__PURE__*/ _jsxDevRuntime.jsxDEV("section", {
+        className: "newDiv absolute top-0 left-0 grid h-full w-full border-[2px] border-[#ededed] overflow-hidden",
+        style: {
+            gridTemplateColumns: `${column.join(" ")}`,
+            gridTemplateRows: `${row.join(" ")}`,
+            gridRowGap: `${+rowsMount.gap}px`,
+            gridColumnGap: `${+colsMount.gap}px`
+        },
+        children: newDiv.map((divEle, index)=>{
+            const { down , up  } = divEle;
+            return /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
+                className: "relative",
+                style: {
+                    gridArea: `${+down[1] >= +up[1] ? +up[1] : down[1]} / ${+down[0] >= +up[0] ? +up[0] : down[0]} / ${+up[1] >= +down[1] ? +up[1] + 1 : +down[1] + 1} / ${+up[0] >= +down[0] ? +up[0] + 1 : +down[0] + 1}`,
+                    background: `hsl(${(index + 1) * 20}, 60%, 50%, 0.283)`
+                },
+                children: [
+                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV("p", {
+                        className: "absolute top-[5px] left-[5px] font-semibold text-[1.1rem]",
+                        children: `div ${index + 1}`
+                    }, void 0, false, {
+                        fileName: "src/components/NewDivs.jsx",
+                        lineNumber: 42,
+                        columnNumber: 13
+                    }, this),
+                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV("button", {
+                        type: "button",
+                        className: "z-50 absolute bottom-[5px] text-[1.2rem] right-[5px] p-[0.2rem]",
+                        onClick: ()=>handleDiv(divEle)
+                        ,
+                        children: "x"
+                    }, void 0, false, {
+                        fileName: "src/components/NewDivs.jsx",
+                        lineNumber: 45,
+                        columnNumber: 13
+                    }, this)
+                ]
+            }, +up[1] * +down[1] * Math.random(), true, {
+                fileName: "src/components/NewDivs.jsx",
+                lineNumber: 30,
+                columnNumber: 11
+            }, this);
+        })
+    }, void 0, false, {
+        fileName: "src/components/NewDivs.jsx",
+        lineNumber: 17,
+        columnNumber: 5
+    }, this);
+}
+_s(NewDivs, "SZHt9iA0mLnmLSB7KNQCfAdmvjg=");
+_c = NewDivs;
+exports.default = NewDivs;
+var _c;
+$RefreshReg$(_c, "NewDivs");
+
+  $parcel$ReactRefreshHelpers$b640.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../Context/Context":"69YKq"}],"9ine8":[function() {},{}],"hOUiR":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$5735 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -25636,12 +25745,12 @@ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _context = require("../Context/Context");
 var _s = $RefreshSig$();
-function Generator() {
+function Generator({ setShowResult  }) {
     _s();
     const { colsMount , setColsMount  } = _react.useContext(_context.colContext);
     const { rowsMount , setRowsMount  } = _react.useContext(_context.rowsContext);
     return /*#__PURE__*/ _jsxDevRuntime.jsxDEV("section", {
-        className: "generator h-[90%] w-[18%]",
+        className: "generator flex flex-col items-center h-[90%] w-[18%]",
         children: [
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV("h4", {
                 className: "text-center font-Gemunu text-[2.4rem] tracking-widest text-[#ff7979] mt-[-1rem]",
@@ -25679,7 +25788,9 @@ function Generator() {
                                         kind: colsMount.kind && +e.target.value > colsMount.kind.length - 1 ? [
                                             ...colsMount.kind,
                                             "1fr"
-                                        ] : Array(+e.target.value).fill("1fr")
+                                        ] : [
+                                            ...colsMount.kind.splice(0, colsMount.kind.length - 1)
+                                        ]
                                     })
                             }, void 0, false, {
                                 fileName: "src/components/Generator.jsx",
@@ -25750,7 +25861,9 @@ function Generator() {
                                         kind: rowsMount.kind && +e.target.value > rowsMount.kind.length - 1 ? [
                                             ...rowsMount.kind,
                                             "1fr"
-                                        ] : Array(+e.target.value).fill("1fr")
+                                        ] : [
+                                            ...rowsMount.kind.splice(0, rowsMount.kind.length - 1)
+                                        ]
                                     })
                             }, void 0, false, {
                                 fileName: "src/components/Generator.jsx",
@@ -25802,6 +25915,17 @@ function Generator() {
                 fileName: "src/components/Generator.jsx",
                 lineNumber: 13,
                 columnNumber: 7
+            }, this),
+            /*#__PURE__*/ _jsxDevRuntime.jsxDEV("button", {
+                type: "button",
+                onClick: ()=>setShowResult(true)
+                ,
+                className: "mt-[2rem] font-NATS font-semibold px-[0.4rem] py-[0.3rem] text-[1.1rem] tracking-wider rounded bg-[#fff] text-[#f36a6a]",
+                children: "Show Result"
+            }, void 0, false, {
+                fileName: "src/components/Generator.jsx",
+                lineNumber: 88,
+                columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
@@ -25817,6 +25941,241 @@ var _c;
 $RefreshReg$(_c, "Generator");
 
   $parcel$ReactRefreshHelpers$5735.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../Context/Context":"69YKq"}],"ezKsy":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$735b = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$735b.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _context = require("../Context/Context");
+var _s = $RefreshSig$();
+function ShowResult({ setShowResult  }) {
+    _s();
+    let getDivs = document.querySelectorAll(".newDiv div");
+    const divs = [];
+    const [values, setValues] = _react.useState([]);
+    const { newDiv  } = _react.useContext(_context.divContext);
+    _react.useEffect(()=>{
+        getDivs = document.querySelectorAll(".newDiv div");
+        getDivs.forEach((div)=>{
+            divs.push(window.getComputedStyle(div).gridArea);
+        });
+        setValues(divs);
+    }, [
+        newDiv
+    ]);
+    return /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
+        className: "results z-[100] absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] w-full h-full bg-[#292929b2] flex items-center justify-center",
+        children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
+            className: "result-container relative w-[45%] p-[1rem] h-[70%] bg-[#222] text-[#f4f2f2]",
+            children: [
+                /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
+                    className: "parent",
+                    children: [
+                        /*#__PURE__*/ _jsxDevRuntime.jsxDEV("span", {
+                            className: "text-[1.4rem] text-[#e4f567]",
+                            children: ".parent "
+                        }, void 0, false, {
+                            fileName: "src/components/ShowResult.jsx",
+                            lineNumber: 22,
+                            columnNumber: 11
+                        }, this),
+                        `{`,
+                        /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
+                            className: "pl-[1rem]",
+                            children: [
+                                /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
+                                    children: [
+                                        /*#__PURE__*/ _jsxDevRuntime.jsxDEV("span", {
+                                            className: "text-[#6ef587] text-[1.1rem]",
+                                            children: "display:"
+                                        }, void 0, false, {
+                                            fileName: "src/components/ShowResult.jsx",
+                                            lineNumber: 26,
+                                            columnNumber: 15
+                                        }, this),
+                                        " ",
+                                        `grid;${1}`
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/components/ShowResult.jsx",
+                                    lineNumber: 25,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
+                                    children: [
+                                        /*#__PURE__*/ _jsxDevRuntime.jsxDEV("span", {
+                                            className: "text-[#6ef587] text-[1.1rem]",
+                                            children: "grid-template-columns:"
+                                        }, void 0, false, {
+                                            fileName: "src/components/ShowResult.jsx",
+                                            lineNumber: 30,
+                                            columnNumber: 15
+                                        }, this),
+                                        " ",
+                                        `repeat(12, 1fr)${1};`
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/components/ShowResult.jsx",
+                                    lineNumber: 29,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
+                                    children: [
+                                        /*#__PURE__*/ _jsxDevRuntime.jsxDEV("span", {
+                                            className: "text-[#6ef587] text-[1.1rem]",
+                                            children: "grid-template-rows:"
+                                        }, void 0, false, {
+                                            fileName: "src/components/ShowResult.jsx",
+                                            lineNumber: 36,
+                                            columnNumber: 15
+                                        }, this),
+                                        " ",
+                                        `repeat(12, 1fr);${1}`
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/components/ShowResult.jsx",
+                                    lineNumber: 35,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
+                                    children: [
+                                        /*#__PURE__*/ _jsxDevRuntime.jsxDEV("span", {
+                                            className: "text-[#6ef587] text-[1.1rem]",
+                                            children: "grid-column-gap:"
+                                        }, void 0, false, {
+                                            fileName: "src/components/ShowResult.jsx",
+                                            lineNumber: 42,
+                                            columnNumber: 15
+                                        }, this),
+                                        " ",
+                                        `0px;${1}`
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/components/ShowResult.jsx",
+                                    lineNumber: 41,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
+                                    children: [
+                                        /*#__PURE__*/ _jsxDevRuntime.jsxDEV("span", {
+                                            className: "text-[#6ef587] text-[1.1rem]",
+                                            children: "grid-row-gap:"
+                                        }, void 0, false, {
+                                            fileName: "src/components/ShowResult.jsx",
+                                            lineNumber: 48,
+                                            columnNumber: 15
+                                        }, this),
+                                        " ",
+                                        `0px;${1}`
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/components/ShowResult.jsx",
+                                    lineNumber: 47,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/components/ShowResult.jsx",
+                            lineNumber: 24,
+                            columnNumber: 11
+                        }, this),
+                        `}`
+                    ]
+                }, void 0, true, {
+                    fileName: "src/components/ShowResult.jsx",
+                    lineNumber: 21,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
+                    className: "children mt-[1rem]",
+                    children: values.map((value, index)=>/*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
+                            children: [
+                                /*#__PURE__*/ _jsxDevRuntime.jsxDEV("span", {
+                                    className: "text-[#fdff6f] text-[1.1rem]",
+                                    children: [
+                                        `.div ${index + 1}`,
+                                        " "
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/components/ShowResult.jsx",
+                                    lineNumber: 59,
+                                    columnNumber: 15
+                                }, this),
+                                `{`,
+                                /*#__PURE__*/ _jsxDevRuntime.jsxDEV("span", {
+                                    children: [
+                                        " ",
+                                        /*#__PURE__*/ _jsxDevRuntime.jsxDEV("span", {
+                                            className: "text-[#6ef587]",
+                                            children: "grid-area:"
+                                        }, void 0, false, {
+                                            fileName: "src/components/ShowResult.jsx",
+                                            lineNumber: 65,
+                                            columnNumber: 17
+                                        }, this),
+                                        " ",
+                                        ` ${value} ;`,
+                                        " "
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/components/ShowResult.jsx",
+                                    lineNumber: 63,
+                                    columnNumber: 15
+                                }, this),
+                                `}`
+                            ]
+                        }, value + index, true, {
+                            fileName: "src/components/ShowResult.jsx",
+                            lineNumber: 58,
+                            columnNumber: 13
+                        }, this)
+                    )
+                }, void 0, false, {
+                    fileName: "src/components/ShowResult.jsx",
+                    lineNumber: 56,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ _jsxDevRuntime.jsxDEV("button", {
+                    type: "button",
+                    className: "absolute text-[1.5rem] font-bold top-[5px] right-[10px]",
+                    onClick: ()=>setShowResult(false)
+                    ,
+                    children: "X"
+                }, void 0, false, {
+                    fileName: "src/components/ShowResult.jsx",
+                    lineNumber: 72,
+                    columnNumber: 9
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "src/components/ShowResult.jsx",
+            lineNumber: 20,
+            columnNumber: 7
+        }, this)
+    }, void 0, false, {
+        fileName: "src/components/ShowResult.jsx",
+        lineNumber: 19,
+        columnNumber: 5
+    }, this);
+}
+_s(ShowResult, "XMYx9OMr8+kXfzWgzXqp7As+Kxo=");
+_c = ShowResult;
+exports.default = ShowResult;
+var _c;
+$RefreshReg$(_c, "ShowResult");
+
+  $parcel$ReactRefreshHelpers$735b.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
