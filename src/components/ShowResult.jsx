@@ -1,11 +1,14 @@
 import React, { useEffect, useContext, useState } from "react";
-import { divContext } from "../Context/Context";
+import { rowsContext, colContext, divContext } from "../Context/Context";
 
 function ShowResult({ setShowResult }) {
-  let getDivs = document.querySelectorAll(".newDiv div");
-  const divs = [];
-  const [values, setValues] = useState([]);
   const { newDiv } = useContext(divContext);
+  const { rowsMount } = useContext(rowsContext);
+  const { colsMount } = useContext(colContext);
+
+  let getDivs;
+  const [values, setValues] = useState([]);
+  const divs = [];
 
   useEffect(() => {
     getDivs = document.querySelectorAll(".newDiv div");
@@ -24,31 +27,31 @@ function ShowResult({ setShowResult }) {
           <div className="pl-[1rem]">
             <div>
               <span className="text-[#6ef587] text-[1.1rem]">display:</span>{" "}
-              {`grid;${1}`}
+              grid;
             </div>
             <div>
               <span className="text-[#6ef587] text-[1.1rem]">
                 grid-template-columns:
               </span>{" "}
-              {`repeat(12, 1fr)${1};`}
+              {`${colsMount.kind.join(" ")};`}
             </div>
             <div>
               <span className="text-[#6ef587] text-[1.1rem]">
                 grid-template-rows:
               </span>{" "}
-              {`repeat(12, 1fr);${1}`}
+              {`${rowsMount.kind.join(" ")};`}
             </div>
             <div>
               <span className="text-[#6ef587] text-[1.1rem]">
                 grid-column-gap:
               </span>{" "}
-              {`0px;${1}`}
+              {`${+colsMount.gap}px`}
             </div>
             <div>
               <span className="text-[#6ef587] text-[1.1rem]">
                 grid-row-gap:
               </span>{" "}
-              {`0px;${1}`}
+              {`${+rowsMount.gap}px`}
             </div>
           </div>
           {`}`}

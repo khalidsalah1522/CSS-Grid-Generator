@@ -26025,10 +26025,12 @@ var _context = require("../Context/Context");
 var _s = $RefreshSig$();
 function ShowResult({ setShowResult  }) {
     _s();
-    let getDivs = document.querySelectorAll(".newDiv div");
-    const divs = [];
-    const [values, setValues] = _react.useState([]);
     const { newDiv  } = _react.useContext(_context.divContext);
+    const { rowsMount  } = _react.useContext(_context.rowsContext);
+    const { colsMount  } = _react.useContext(_context.colContext);
+    let getDivs;
+    const [values, setValues] = _react.useState([]);
+    const divs = [];
     _react.useEffect(()=>{
         getDivs = document.querySelectorAll(".newDiv div");
         getDivs.forEach((div)=>{
@@ -26051,7 +26053,7 @@ function ShowResult({ setShowResult  }) {
                             children: ".parent "
                         }, void 0, false, {
                             fileName: "src/components/ShowResult.jsx",
-                            lineNumber: 22,
+                            lineNumber: 25,
                             columnNumber: 11
                         }, this),
                         `{`,
@@ -26065,15 +26067,15 @@ function ShowResult({ setShowResult  }) {
                                             children: "display:"
                                         }, void 0, false, {
                                             fileName: "src/components/ShowResult.jsx",
-                                            lineNumber: 26,
+                                            lineNumber: 29,
                                             columnNumber: 15
                                         }, this),
                                         " ",
-                                        `grid;${1}`
+                                        "grid;"
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/components/ShowResult.jsx",
-                                    lineNumber: 25,
+                                    lineNumber: 28,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
@@ -26083,15 +26085,15 @@ function ShowResult({ setShowResult  }) {
                                             children: "grid-template-columns:"
                                         }, void 0, false, {
                                             fileName: "src/components/ShowResult.jsx",
-                                            lineNumber: 30,
+                                            lineNumber: 33,
                                             columnNumber: 15
                                         }, this),
                                         " ",
-                                        `repeat(12, 1fr)${1};`
+                                        `${colsMount.kind.join(" ")};`
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/components/ShowResult.jsx",
-                                    lineNumber: 29,
+                                    lineNumber: 32,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
@@ -26101,15 +26103,15 @@ function ShowResult({ setShowResult  }) {
                                             children: "grid-template-rows:"
                                         }, void 0, false, {
                                             fileName: "src/components/ShowResult.jsx",
-                                            lineNumber: 36,
+                                            lineNumber: 39,
                                             columnNumber: 15
                                         }, this),
                                         " ",
-                                        `repeat(12, 1fr);${1}`
+                                        `${rowsMount.kind.join(" ")};`
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/components/ShowResult.jsx",
-                                    lineNumber: 35,
+                                    lineNumber: 38,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
@@ -26119,15 +26121,15 @@ function ShowResult({ setShowResult  }) {
                                             children: "grid-column-gap:"
                                         }, void 0, false, {
                                             fileName: "src/components/ShowResult.jsx",
-                                            lineNumber: 42,
+                                            lineNumber: 45,
                                             columnNumber: 15
                                         }, this),
                                         " ",
-                                        `0px;${1}`
+                                        `${+colsMount.gap}px`
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/components/ShowResult.jsx",
-                                    lineNumber: 41,
+                                    lineNumber: 44,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
@@ -26137,28 +26139,28 @@ function ShowResult({ setShowResult  }) {
                                             children: "grid-row-gap:"
                                         }, void 0, false, {
                                             fileName: "src/components/ShowResult.jsx",
-                                            lineNumber: 48,
+                                            lineNumber: 51,
                                             columnNumber: 15
                                         }, this),
                                         " ",
-                                        `0px;${1}`
+                                        `${+rowsMount.gap}px`
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/components/ShowResult.jsx",
-                                    lineNumber: 47,
+                                    lineNumber: 50,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "src/components/ShowResult.jsx",
-                            lineNumber: 24,
+                            lineNumber: 27,
                             columnNumber: 11
                         }, this),
                         `}`
                     ]
                 }, void 0, true, {
                     fileName: "src/components/ShowResult.jsx",
-                    lineNumber: 21,
+                    lineNumber: 24,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
@@ -26173,7 +26175,7 @@ function ShowResult({ setShowResult  }) {
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/components/ShowResult.jsx",
-                                    lineNumber: 59,
+                                    lineNumber: 62,
                                     columnNumber: 15
                                 }, this),
                                 `{`,
@@ -26185,7 +26187,7 @@ function ShowResult({ setShowResult  }) {
                                             children: "grid-area:"
                                         }, void 0, false, {
                                             fileName: "src/components/ShowResult.jsx",
-                                            lineNumber: 65,
+                                            lineNumber: 68,
                                             columnNumber: 17
                                         }, this),
                                         " ",
@@ -26194,20 +26196,20 @@ function ShowResult({ setShowResult  }) {
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/components/ShowResult.jsx",
-                                    lineNumber: 63,
+                                    lineNumber: 66,
                                     columnNumber: 15
                                 }, this),
                                 `}`
                             ]
                         }, value + index, true, {
                             fileName: "src/components/ShowResult.jsx",
-                            lineNumber: 58,
+                            lineNumber: 61,
                             columnNumber: 13
                         }, this)
                     )
                 }, void 0, false, {
                     fileName: "src/components/ShowResult.jsx",
-                    lineNumber: 56,
+                    lineNumber: 59,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ _jsxDevRuntime.jsxDEV("button", {
@@ -26218,22 +26220,22 @@ function ShowResult({ setShowResult  }) {
                     children: "X"
                 }, void 0, false, {
                     fileName: "src/components/ShowResult.jsx",
-                    lineNumber: 72,
+                    lineNumber: 75,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "src/components/ShowResult.jsx",
-            lineNumber: 20,
+            lineNumber: 23,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "src/components/ShowResult.jsx",
-        lineNumber: 19,
+        lineNumber: 22,
         columnNumber: 5
     }, this);
 }
-_s(ShowResult, "XMYx9OMr8+kXfzWgzXqp7As+Kxo=");
+_s(ShowResult, "c90Dchn7wZgR/iDt6aigDutzBRE=");
 _c = ShowResult;
 exports.default = ShowResult;
 var _c;
