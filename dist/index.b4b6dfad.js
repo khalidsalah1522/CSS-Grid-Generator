@@ -25280,55 +25280,82 @@ parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
+var _githubPng = require("../assets/image/github.png");
+var _githubPngDefault = parcelHelpers.interopDefault(_githubPng);
 function Header() {
     return /*#__PURE__*/ _jsxDevRuntime.jsxDEV("section", {
-        className: "header mb-[5rem]",
-        children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
-            className: "header-container text-center ",
-            children: [
-                /*#__PURE__*/ _jsxDevRuntime.jsxDEV("h2", {
-                    className: "text-[3rem] text-[#77f783] font-Gemunu",
-                    children: "CSS Grid Generator"
+        className: "header w-[50%] flex items-center justify-between mb-[5rem]",
+        children: [
+            /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
+                className: "header-container text-center ",
+                children: [
+                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV("h2", {
+                        className: "text-[3rem] text-[#77f783] font-Gemunu",
+                        children: "CSS Grid Generator"
+                    }, void 0, false, {
+                        fileName: "src/components/Header.jsx",
+                        lineNumber: 8,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV("h3", {
+                        className: "text-[#f7f4f4] font-semibold text-[1.4rem]",
+                        children: [
+                            /*#__PURE__*/ _jsxDevRuntime.jsxDEV("span", {
+                                className: "tracking-wider",
+                                children: "Built by "
+                            }, void 0, false, {
+                                fileName: "src/components/Header.jsx",
+                                lineNumber: 12,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ _jsxDevRuntime.jsxDEV("a", {
+                                href: "https://www.linkedin.com/in/khalidsalah/",
+                                className: "font-Gemunu tracking-wide bg-red-400 rounded p-[0.2rem]",
+                                children: "@Khalid Salah"
+                            }, void 0, false, {
+                                fileName: "src/components/Header.jsx",
+                                lineNumber: 13,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/components/Header.jsx",
+                        lineNumber: 11,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "src/components/Header.jsx",
+                lineNumber: 7,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
+                className: "github flex items-center justify-center w-[6rem] h-[5rem] overflow-hidden",
+                children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV("a", {
+                    href: "https://github.com/khalidsalah1522/CSS-Grid-Generator",
+                    children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV("img", {
+                        src: _githubPngDefault.default,
+                        alt: "",
+                        className: "w-full h-full rounded-[12px]"
+                    }, void 0, false, {
+                        fileName: "src/components/Header.jsx",
+                        lineNumber: 23,
+                        columnNumber: 11
+                    }, this)
                 }, void 0, false, {
                     fileName: "src/components/Header.jsx",
-                    lineNumber: 7,
-                    columnNumber: 9
-                }, this),
-                /*#__PURE__*/ _jsxDevRuntime.jsxDEV("h3", {
-                    className: "text-[#f7f4f4] font-semibold text-[1.4rem]",
-                    children: [
-                        /*#__PURE__*/ _jsxDevRuntime.jsxDEV("span", {
-                            className: "tracking-wider",
-                            children: "Built by "
-                        }, void 0, false, {
-                            fileName: "src/components/Header.jsx",
-                            lineNumber: 11,
-                            columnNumber: 11
-                        }, this),
-                        /*#__PURE__*/ _jsxDevRuntime.jsxDEV("a", {
-                            href: "abcd",
-                            className: "font-Gemunu tracking-wide",
-                            children: "@Khalid Salah"
-                        }, void 0, false, {
-                            fileName: "src/components/Header.jsx",
-                            lineNumber: 12,
-                            columnNumber: 11
-                        }, this)
-                    ]
-                }, void 0, true, {
-                    fileName: "src/components/Header.jsx",
-                    lineNumber: 10,
+                    lineNumber: 22,
                     columnNumber: 9
                 }, this)
-            ]
-        }, void 0, true, {
-            fileName: "src/components/Header.jsx",
-            lineNumber: 6,
-            columnNumber: 7
-        }, this)
-    }, void 0, false, {
+            }, void 0, false, {
+                fileName: "src/components/Header.jsx",
+                lineNumber: 21,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
         fileName: "src/components/Header.jsx",
-        lineNumber: 5,
+        lineNumber: 6,
         columnNumber: 5
     }, this);
 }
@@ -25342,7 +25369,44 @@ $RefreshReg$(_c, "Header");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"axNUW":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../assets/image/github.png":"5yXLB"}],"5yXLB":[function(require,module,exports) {
+module.exports = require('./helpers/bundle-url').getBundleURL('byUka') + "github.7f116566.png" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"lgJ39":[function(require,module,exports) {
+"use strict";
+var bundleURL = {};
+function getBundleURLCached(id) {
+    var value = bundleURL[id];
+    if (!value) {
+        value = getBundleURL();
+        bundleURL[id] = value;
+    }
+    return value;
+}
+function getBundleURL() {
+    try {
+        throw new Error();
+    } catch (err) {
+        var matches = ('' + err.stack).match(/(https?|file|ftp):\/\/[^)\n]+/g);
+        if (matches) // The first two stack frames will be this function and getBundleURLCached.
+        // Use the 3rd one, which will be a runtime in the original bundle.
+        return getBaseURL(matches[2]);
+    }
+    return '/';
+}
+function getBaseURL(url) {
+    return ('' + url).replace(/^((?:https?|file|ftp):\/\/.+)\/[^/]+$/, '$1') + '/';
+} // TODO: Replace uses with `new URL(url).origin` when ie11 is no longer supported.
+function getOrigin(url) {
+    var matches = ('' + url).match(/(https?|file|ftp):\/\/[^/]+/);
+    if (!matches) throw new Error('Origin not found');
+    return matches[0];
+}
+exports.getBundleURL = getBundleURLCached;
+exports.getBaseURL = getBaseURL;
+exports.getOrigin = getOrigin;
+
+},{}],"axNUW":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$6e0c = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
