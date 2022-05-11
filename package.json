@@ -3,9 +3,8 @@
   "source": "./public/index.html",
   "version": "1.0.0",
   "description": "",
-  "main": "build/index.js",
   "scripts": {
-    "dev": "parcel",
+    "dev": "parcel public/index.html -p 3000",
     "build": "parcel build",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint .",

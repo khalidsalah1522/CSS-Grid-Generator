@@ -52,14 +52,16 @@ function GridGenerator() {
     >
       {arr.map((ele, index) => (
         <div
-          key={new Date() * Math.random()}
+          key={new Date() * Math.random() + ele}
           id={index + 1}
-          data-row={Math.ceil((index + 1) / rowsMount.kind.length)}
+          data-row={Math.ceil((index + 1) / colsMount.kind.length)}
           data-col={Math.ceil((index + 1) % colsMount.kind.length)}
           className="border-[1px] border-[#cbcbcb] border-dotted"
           onMouseDown={handleDown}
-          onMouseUp={handleUp}
+          onMouseUp={(e) => handleUp(e)}
           role="button"
+          aria-label="square"
+          tabIndex={0}
         />
       ))}
     </div>
