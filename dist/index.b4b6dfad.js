@@ -25040,7 +25040,7 @@ function App() {
         children: [
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_headerDefault.default, {}, void 0, false, {
                 fileName: "src/App.jsx",
-                lineNumber: 27,
+                lineNumber: 25,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
@@ -25054,42 +25054,42 @@ function App() {
                             children: [
                                 /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_gridDefault.default, {}, void 0, false, {
                                     fileName: "src/App.jsx",
-                                    lineNumber: 32,
+                                    lineNumber: 30,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_generatorDefault.default, {
                                     setShowResult: setShowResult
                                 }, void 0, false, {
                                     fileName: "src/App.jsx",
-                                    lineNumber: 33,
+                                    lineNumber: 31,
                                     columnNumber: 15
                                 }, this),
                                 showResult ? /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_showResultDefault.default, {
                                     setShowResult: setShowResult
                                 }, void 0, false, {
                                     fileName: "src/App.jsx",
-                                    lineNumber: 34,
+                                    lineNumber: 32,
                                     columnNumber: 29
                                 }, this) : ""
                             ]
                         }, void 0, true, {
                             fileName: "src/App.jsx",
-                            lineNumber: 31,
+                            lineNumber: 29,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "src/App.jsx",
-                        lineNumber: 30,
+                        lineNumber: 28,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "src/App.jsx",
-                    lineNumber: 29,
+                    lineNumber: 27,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "src/App.jsx",
-                lineNumber: 28,
+                lineNumber: 26,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
@@ -25097,13 +25097,13 @@ function App() {
                 children: "Visit on a laptop or desktop"
             }, void 0, false, {
                 fileName: "src/App.jsx",
-                lineNumber: 39,
+                lineNumber: 37,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "src/App.jsx",
-        lineNumber: 26,
+        lineNumber: 24,
         columnNumber: 5
     }, this);
 }
@@ -26052,9 +26052,12 @@ function ShowResult({ setShowResult  }) {
                     className: "parent",
                     children: [
                         /*#__PURE__*/ _jsxDevRuntime.jsxDEV("span", {
-                            className: "text-[1.4rem] text-[#e4f567]",
-                            children: ".parent "
-                        }, void 0, false, {
+                            className: "text-[1.4rem] text-[#e4f567] font-bold tracking-wide",
+                            children: [
+                                ".parent",
+                                " "
+                            ]
+                        }, void 0, true, {
                             fileName: "src/components/ShowResult.jsx",
                             lineNumber: 25,
                             columnNumber: 11
@@ -26066,11 +26069,11 @@ function ShowResult({ setShowResult  }) {
                                 /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
                                     children: [
                                         /*#__PURE__*/ _jsxDevRuntime.jsxDEV("span", {
-                                            className: "text-[#6ef587] text-[1.1rem]",
+                                            className: "text-[#6ef587] text-[1.1rem] font-bold tracking-wide",
                                             children: "display:"
                                         }, void 0, false, {
                                             fileName: "src/components/ShowResult.jsx",
-                                            lineNumber: 29,
+                                            lineNumber: 31,
                                             columnNumber: 15
                                         }, this),
                                         " ",
@@ -26078,17 +26081,17 @@ function ShowResult({ setShowResult  }) {
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/components/ShowResult.jsx",
-                                    lineNumber: 28,
+                                    lineNumber: 30,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
                                     children: [
                                         /*#__PURE__*/ _jsxDevRuntime.jsxDEV("span", {
-                                            className: "text-[#6ef587] text-[1.1rem]",
+                                            className: "text-[#6ef587] text-[1.1rem] font-bold tracking-wide",
                                             children: "grid-template-columns:"
                                         }, void 0, false, {
                                             fileName: "src/components/ShowResult.jsx",
-                                            lineNumber: 33,
+                                            lineNumber: 37,
                                             columnNumber: 15
                                         }, this),
                                         " ",
@@ -26096,17 +26099,17 @@ function ShowResult({ setShowResult  }) {
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/components/ShowResult.jsx",
-                                    lineNumber: 32,
+                                    lineNumber: 36,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
                                     children: [
                                         /*#__PURE__*/ _jsxDevRuntime.jsxDEV("span", {
-                                            className: "text-[#6ef587] text-[1.1rem]",
+                                            className: "text-[#6ef587] text-[1.1rem] font-bold tracking-wide",
                                             children: "grid-template-rows:"
                                         }, void 0, false, {
                                             fileName: "src/components/ShowResult.jsx",
-                                            lineNumber: 39,
+                                            lineNumber: 43,
                                             columnNumber: 15
                                         }, this),
                                         " ",
@@ -26114,17 +26117,17 @@ function ShowResult({ setShowResult  }) {
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/components/ShowResult.jsx",
-                                    lineNumber: 38,
+                                    lineNumber: 42,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
                                     children: [
                                         /*#__PURE__*/ _jsxDevRuntime.jsxDEV("span", {
-                                            className: "text-[#6ef587] text-[1.1rem]",
+                                            className: "text-[#6ef587] text-[1.1rem] font-bold tracking-wide",
                                             children: "grid-column-gap:"
                                         }, void 0, false, {
                                             fileName: "src/components/ShowResult.jsx",
-                                            lineNumber: 45,
+                                            lineNumber: 49,
                                             columnNumber: 15
                                         }, this),
                                         " ",
@@ -26132,17 +26135,17 @@ function ShowResult({ setShowResult  }) {
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/components/ShowResult.jsx",
-                                    lineNumber: 44,
+                                    lineNumber: 48,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
                                     children: [
                                         /*#__PURE__*/ _jsxDevRuntime.jsxDEV("span", {
-                                            className: "text-[#6ef587] text-[1.1rem]",
+                                            className: "text-[#6ef587] text-[1.1rem] font-bold tracking-wide",
                                             children: "grid-row-gap:"
                                         }, void 0, false, {
                                             fileName: "src/components/ShowResult.jsx",
-                                            lineNumber: 51,
+                                            lineNumber: 55,
                                             columnNumber: 15
                                         }, this),
                                         " ",
@@ -26150,13 +26153,13 @@ function ShowResult({ setShowResult  }) {
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/components/ShowResult.jsx",
-                                    lineNumber: 50,
+                                    lineNumber: 54,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "src/components/ShowResult.jsx",
-                            lineNumber: 27,
+                            lineNumber: 29,
                             columnNumber: 11
                         }, this),
                         `}`
@@ -26171,14 +26174,14 @@ function ShowResult({ setShowResult  }) {
                     children: values.map((value, index)=>/*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
                             children: [
                                 /*#__PURE__*/ _jsxDevRuntime.jsxDEV("span", {
-                                    className: "text-[#fdff6f] text-[1.1rem]",
+                                    className: "text-[#fdff6f] text-[1.1rem] font-bold tracking-wide",
                                     children: [
                                         `.div ${index + 1}`,
                                         " "
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/components/ShowResult.jsx",
-                                    lineNumber: 62,
+                                    lineNumber: 66,
                                     columnNumber: 15
                                 }, this),
                                 `{`,
@@ -26186,11 +26189,11 @@ function ShowResult({ setShowResult  }) {
                                     children: [
                                         " ",
                                         /*#__PURE__*/ _jsxDevRuntime.jsxDEV("span", {
-                                            className: "text-[#6ef587]",
+                                            className: "text-[#6ef587] font-bold tracking-wide",
                                             children: "grid-area:"
                                         }, void 0, false, {
                                             fileName: "src/components/ShowResult.jsx",
-                                            lineNumber: 68,
+                                            lineNumber: 72,
                                             columnNumber: 17
                                         }, this),
                                         " ",
@@ -26199,20 +26202,20 @@ function ShowResult({ setShowResult  }) {
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/components/ShowResult.jsx",
-                                    lineNumber: 66,
+                                    lineNumber: 70,
                                     columnNumber: 15
                                 }, this),
                                 `}`
                             ]
                         }, value + index, true, {
                             fileName: "src/components/ShowResult.jsx",
-                            lineNumber: 61,
+                            lineNumber: 65,
                             columnNumber: 13
                         }, this)
                     )
                 }, void 0, false, {
                     fileName: "src/components/ShowResult.jsx",
-                    lineNumber: 59,
+                    lineNumber: 63,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ _jsxDevRuntime.jsxDEV("button", {
@@ -26223,7 +26226,7 @@ function ShowResult({ setShowResult  }) {
                     children: "X"
                 }, void 0, false, {
                     fileName: "src/components/ShowResult.jsx",
-                    lineNumber: 75,
+                    lineNumber: 81,
                     columnNumber: 9
                 }, this)
             ]

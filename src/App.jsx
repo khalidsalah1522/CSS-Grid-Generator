@@ -17,11 +17,9 @@ function App() {
   });
   const [newDiv, setNewDev] = useState([]);
   const [showResult, setShowResult] = useState(false);
-
   const checkCol = useMemo(() => ({ colsMount, setColsMount }), [colsMount]);
   const checkRow = useMemo(() => ({ rowsMount, setRowsMount }), [rowsMount]);
   const checkDiv = useMemo(() => ({ newDiv, setNewDev }), [newDiv]);
-
   return (
     <div className="app-container relative bg-[#222] overflow-hidden h-screen flex flex-col items-center justify-between">
       <Header />
