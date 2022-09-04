@@ -29,47 +29,46 @@ function Parent({ colsResult, rowsResult, colsGap, rowsGap }) {
   }, [colsResult, rowsResult]);
 
   return (
-    <>
-      <div className="parent">
-        <span className="text-[1.4rem] text-[#e4f567] font-bold tracking-wide">
-          .parent{" "}
-        </span>
-        {`{`}
-        <div className="pl-[1rem]">
-          <div>
-            <span className="text-[#6ef587] text-[1.1rem] font-bold tracking-wide">
-              display:
-            </span>{" "}
-            grid;
-          </div>
-          <div>
-            <span className="text-[#6ef587] text-[1.1rem] font-bold tracking-wide">
-              grid-template-columns:
-            </span>{" "}
-            {`${result[0]};`}
-          </div>
-          <div>
-            <span className="text-[#6ef587] text-[1.1rem] font-bold tracking-wide">
-              grid-template-rows:
-            </span>{" "}
-            {`${result[1]};`}
-          </div>
-          <div>
-            <span className="text-[#6ef587] text-[1.1rem] font-bold tracking-wide">
-              grid-column-gap:
-            </span>{" "}
-            {`${colsGap}px`}
-          </div>
-          <div>
-            <span className="text-[#6ef587] text-[1.1rem] font-bold tracking-wide">
-              grid-row-gap:
-            </span>{" "}
-            {`${rowsGap}px`}
-          </div>
+    <div className="parent">
+      <span className="text-[1.4rem] text-[#e4f567] font-bold tracking-wide">
+        .parent{" "}
+      </span>
+      {`{`}
+      <div className="pl-[1rem]">
+        <div>
+          <span className="text-[#6ef587] text-[1.1rem] font-bold tracking-wide">
+            display:
+          </span>{" "}
+          grid;
         </div>
-        {`}`}
+        <div>
+          <span className="text-[#6ef587] text-[1.1rem] font-bold tracking-wide">
+            grid-template-columns:
+          </span>{" "}
+          {`${result[0]}`};
+        </div>
+        <div>
+          <span className="text-[#6ef587] text-[1.1rem] font-bold tracking-wide">
+            grid-template-rows:
+          </span>{" "}
+          {`${result[1]}`};
+        </div>
+        <div>
+          <span className="text-[#6ef587] text-[1.1rem] font-bold tracking-wide">
+            grid-column-gap:
+          </span>{" "}
+          {`${colsGap}`}px;
+        </div>
+        <div>
+          <span className="text-[#6ef587] text-[1.1rem] font-bold tracking-wide">
+            grid-row-gap:
+          </span>{" "}
+          {`${rowsGap}`}
+          px;
+        </div>
       </div>
-    </>
+      {`}`}
+    </div>
   );
 }
 

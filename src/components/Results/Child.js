@@ -12,7 +12,7 @@ function Child({ value, index }) {
         <span className="text-[#6ef587] font-bold tracking-wide">
           grid-area:
         </span>{" "}
-        {` ${value} ;`}{" "}
+        {` ${value}`};
       </span>
       {`}`}{" "}
     </div>
