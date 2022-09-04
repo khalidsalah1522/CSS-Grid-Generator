@@ -27,12 +27,15 @@ function Generator() {
     ];
 
     if (isDown) {
-      const { down, up } = coordinate;
-      const x1 = down[1] >= up[1] ? up[1] : down[1];
-      const x2 = up[1] >= down[1] ? up[1] + 1 : down[1] + 1;
-      const y1 = down[0] >= up[0] ? up[0] : down[0];
-      const y2 = up[0] >= +down[0] ? +up[0] + 1 : +down[0] + 1;
-      setNewDiv([...newDiv, `${x1} / ${y1} / ${x2} / ${y2}`]);
+      let { down, up } = coordinate;
+      if (down[1] >= up[1] && down[0] >= up[0]) {
+        down = [up, (up = down)][0];
+      }
+
+      setNewDiv([
+        ...newDiv,
+        `${down[1]} / ${down[0]} / ${up[1] + 1} / ${up[0] + 1}`,
+      ]);
       isDown = false;
     }
   };
