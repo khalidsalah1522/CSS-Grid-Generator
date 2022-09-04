@@ -35,7 +35,7 @@ function ShowResult({ setShowResult }) {
 
   return (
     <div className="results z-[100] absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] w-full h-full bg-[#292929b2] flex items-center justify-center">
-      <div className="result-container relative w-[45%] p-[1rem] h-[70%] bg-[#222] text-[#f4f2f2]">
+      <div className="result-container relative w-[45%] p-[1rem] h-[70%] bg-[#222] text-[#f4f2f2] z-10 overflow-y-scroll">
         <Parent
           colsResult={colsResult}
           rowsResult={rowsResult}

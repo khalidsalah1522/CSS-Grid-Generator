@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 
+import "./style/grid.css";
+
 // Components
 import Header from "./sections/Header";
 import Main from "./sections/Main";
@@ -7,7 +9,6 @@ import Results from "./components/Results";
 
 // Context
 import { colsContext, rowsContext, newDivContext } from "./Context/Context";
-import SmallScreen from "./components/SmallScreen";
 
 function App() {
   const [cols, setCols] = useState({
@@ -29,7 +30,10 @@ function App() {
           <newDivContext.Provider value={{ newDiv, setNewDiv }}>
             <Main setShowResult={setShowResult} />
             {showResult ? <Results setShowResult={setShowResult} /> : ""}
-            <SmallScreen />
+            <div className="block lg:hidden absolute top-[50%] left-[50%] text-[#fff] translate-x-[-50%] translate-y-[-50%] text-center">
+              This Page not for Small screen, Enter this page on bigger screen,
+              [ Laptop, Desktop ]
+            </div>
           </newDivContext.Provider>
         </rowsContext.Provider>
       </colsContext.Provider>

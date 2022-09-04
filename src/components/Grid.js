@@ -1,18 +1,17 @@
 import React from "react";
 
 // Components
-import ColUnits from "./Grid/ColUnits";
-import RowUnits from "./Grid/RowUnits";
+import Filed from "./Filed";
 import Generator from "./Grid/Generator";
 import Maingrid from "./Grid/Maingrid";
 
 function Grid() {
   return (
     <section className="grid-container relative w-[80%] h-[90%]">
-      <ColUnits />
+      <Filed type="cols" />
       <Maingrid />
       <Generator />
-      <RowUnits />
+      <Filed type="row" />
     </section>
   );
 }
