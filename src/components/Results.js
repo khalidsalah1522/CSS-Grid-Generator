@@ -16,7 +16,6 @@ function ShowResult({ setShowResult }) {
   let number = 1;
 
   useEffect(() => {
-    console.log(cols, rows);
     for (let i = 0; i < cols.value.length - 1; i++) {
       if (cols.value[i] == cols.value[i + 1]) {
         colsResult[cols.value[i]] = [cols.value[i], (number = number + 1)];
